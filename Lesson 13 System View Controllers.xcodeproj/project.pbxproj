@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6992A59226B82F1006B49D7 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6992A58226B82F1006B49D7 /* AlertController.swift */; };
 		B6F65018226B317C00ADB23F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F65017226B317C00ADB23F /* AppDelegate.swift */; };
-		B6F6501A226B317C00ADB23F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F65019226B317C00ADB23F /* ViewController.swift */; };
+		B6F6501A226B317C00ADB23F /* ViewController+IBActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F65019226B317C00ADB23F /* ViewController+IBActions.swift */; };
 		B6F6501D226B317C00ADB23F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F6501B226B317C00ADB23F /* Main.storyboard */; };
 		B6F6501F226B317E00ADB23F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F6501E226B317E00ADB23F /* Assets.xcassets */; };
 		B6F65022226B317E00ADB23F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F65020226B317E00ADB23F /* LaunchScreen.storyboard */; };
+		B6F6502E226B407A00ADB23F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F6502D226B407A00ADB23F /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6992A58226B82F1006B49D7 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		B6F65014226B317C00ADB23F /* Lesson 13 System View Controllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson 13 System View Controllers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F65017226B317C00ADB23F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B6F65019226B317C00ADB23F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6F65019226B317C00ADB23F /* ViewController+IBActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+IBActions.swift"; sourceTree = "<group>"; };
 		B6F6501C226B317C00ADB23F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6F6501E226B317E00ADB23F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6F65021226B317E00ADB23F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6F65023226B317E00ADB23F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6F6502D226B407A00ADB23F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		B6F65016226B317C00ADB23F /* Lesson 13 System View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B6F65017226B317C00ADB23F /* AppDelegate.swift */,
-				B6F65019226B317C00ADB23F /* ViewController.swift */,
-				B6F6501B226B317C00ADB23F /* Main.storyboard */,
-				B6F6501E226B317E00ADB23F /* Assets.xcassets */,
-				B6F65020226B317E00ADB23F /* LaunchScreen.storyboard */,
-				B6F65023226B317E00ADB23F /* Info.plist */,
+				B6F6502F226B825000ADB23F /* Extensions */,
+				B6F6502B226B3A4700ADB23F /* View */,
+				B6F6502A226B3A4400ADB23F /* View Controller */,
+				B6F65029226B3A4200ADB23F /* Supporting Files */,
 			);
 			path = "Lesson 13 System View Controllers";
+			sourceTree = "<group>";
+		};
+		B6F65029226B3A4200ADB23F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6F65017226B317C00ADB23F /* AppDelegate.swift */,
+				B6F6501E226B317E00ADB23F /* Assets.xcassets */,
+				B6F65023226B317E00ADB23F /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6F6502A226B3A4400ADB23F /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6F6502D226B407A00ADB23F /* ViewController.swift */,
+				B6F65019226B317C00ADB23F /* ViewController+IBActions.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		B6F6502B226B3A4700ADB23F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6F6501B226B317C00ADB23F /* Main.storyboard */,
+				B6F65020226B317E00ADB23F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6F6502F226B825000ADB23F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6992A58226B82F1006B49D7 /* AlertController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6F6501A226B317C00ADB23F /* ViewController.swift in Sources */,
+				B6992A59226B82F1006B49D7 /* AlertController.swift in Sources */,
+				B6F6502E226B407A00ADB23F /* ViewController.swift in Sources */,
+				B6F6501A226B317C00ADB23F /* ViewController+IBActions.swift in Sources */,
 				B6F65018226B317C00ADB23F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YNGPF6K39Z;
-				INFOPLIST_FILE = "Lesson 13 System View Controllers/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Lesson 13 System View Controllers/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YNGPF6K39Z;
-				INFOPLIST_FILE = "Lesson 13 System View Controllers/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Lesson 13 System View Controllers/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
